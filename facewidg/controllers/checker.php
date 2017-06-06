@@ -23,9 +23,10 @@ class w_facewidg_c_checker extends Controller_Widget
 	public function index($settings = [])
 	{
 		return [
-			'fburl'			=> $settings['fburl'],
-			'headersize'	=> $settings['headersize'],
-			'showposts'		=> $settings['showposts']
+			'fb-url'			=> $settings['fb-url'],
+			'header-taille'		=> in_array($settings['header-taille'], ['1', '0']) ? $settings['header-taille'] : '1',
+			'voir-posts'		=> in_array($settings['voir-post'], ['1', '0']) ? $settings['voir-post'] : '1',
+			'facepile'		=> in_array($settings['facepile'], ['1', '0']) ? $settings['facepile'] : '1'
 		];
 	}
 }

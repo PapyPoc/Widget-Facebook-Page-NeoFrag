@@ -28,10 +28,11 @@ $lang['description']          = 'Votre page facebook en widget !';
 $lang['link']          = 'Adresse de la page';
 $lang['t-header']          = 'Taille Header';  
 $lang['v-articles']          = 'Visualiser les articles';
+$lang['v-facepile']          = 'Voir les photos';
 $lang['header-petit']          = 'Petite';  
 $lang['header-grand']          = 'Grande';
-$lang['articles-oui']          = 'Oui';  
-$lang['articles-non']          = 'Non';
+$lang['oui']       			   = 'Oui';  
+$lang['non']      			   = 'Non';
 /*
 NeoFrag Alpha 0.1.6
 ./widgets/facewidg/lang/fr.php

@@ -6,31 +6,42 @@
 		<div id="facebook-options" class="tab-pane active" role="tabpanel">
 			<div class="form-horizontal">
 				<div class="form-group">
-					<label for="settings-fburl" class="col-sm-4 control-label"><?php echo $this->lang('link'); ?></label>
-					<div class="col-sm-8">
-						<input type="text" class="form-control" name="settings[fburl]" id="settings-fburl" value="<?php if(isset($data['fburl']))  echo $data['fburl'];?>" />
+					<label for="settings-group" class="col-sm-4 control-label"><?php echo $this->lang('link'); ?></label>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" name="settings[fb-url]" id="settings-fb-url" value="<?php if(isset($data['fb-url']))  echo $data['fb-url'];?>" />
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="settings-headersize" class="col-sm-5 control-label"><?php echo $this->lang('t-header'); ?></label>
+					<label for="settings-group" class="col-sm-4 control-label"><?php echo $this->lang('t-header'); ?></label>
 					<div class="col-sm-5">
-						<form>
-							<select class="form-control" name="settings[headersize]" id="settings-headersize">
-								<option <?php if ($data['headersize']=='petite') echo 'selected'; ?>><?php echo $this->lang('header-petit'); ?>
-								<option <?php if ($data['headersize']=='grande') echo 'selected'; ?>><?php echo $this->lang('header-grand'); ?>
-							</select>
-						</form>
+						<FORM>
+							<SELECT class="form-control" name="settings[header-taille]" id="settings-header-taille">
+								<OPTION value="0" <?php if ($data['header-taille'] == '0') echo 'selected'; ?>><?php echo $this->lang('header-petit'); ?></OPTION>
+								<OPTION value="1" <?php if ($data['header-taille'] == '1') echo 'selected'; ?>><?php echo $this->lang('header-grand'); ?></OPTION>
+							</SELECT>
+						</FORM>
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="settings-showposts" class="col-sm-4 control-label"><?php echo $this->lang('v-articles'); ?></label>
-					<div class="col-sm-3">
-						<form>
-							<select class="form-control" name="settings[showposts]" id="settings-showposts">
-								<option <?php if ($data['showposts']=='oui') echo 'selected'; ?>><?php echo $this->lang('articles-oui'); ?>
-								<option <?php if ($data['showposts']=='non') echo 'selected'; ?>><?php echo $this->lang('articles-non'); ?>
-							</select>
-						</form>
+					<label for="settings-group" class="col-sm-4 control-label"><?php echo $this->lang('v-articles'); ?></label>
+					<div class="col-sm-5">
+						<FORM>
+							<SELECT class="form-control" name="settings[voir-posts]" id="settings-voir-posts">
+								<OPTION value="1" <?php if ($data['voir-posts'] == '1') echo 'selected'; ?>><?php echo $this->lang('oui'); ?></OPTION>
+								<OPTION value="0" <?php if ($data['voir-posts'] == '0') echo 'selected'; ?>><?php echo $this->lang('non'); ?></OPTION>
+							</SELECT>
+						</FORM>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="settings-group" class="col-sm-4 control-label"><?php echo $this->lang('v-facepile'); ?></label>
+					<div class="col-sm-5">
+						<FORM>
+							<SELECT class="form-control" name="settings[facepile]" id="settings-facepile">
+								<OPTION value="1" <?php if ($data['facepile'] == '1') echo 'selected'; ?>><?php echo $this->lang('oui'); ?></OPTION>
+								<OPTION value="0" <?php if ($data['facepile'] == '0') echo 'selected'; ?>><?php echo $this->lang('non'); ?></OPTION>
+							</SELECT>
+						</FORM>
 					</div>
 				</div>
 			</div>
