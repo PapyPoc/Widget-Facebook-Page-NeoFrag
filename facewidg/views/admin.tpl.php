@@ -8,7 +8,7 @@
 				<div class="form-group">
 					<label for="settings-group" class="col-sm-4 control-label"><?php echo $this->lang('link'); ?></label>
 					<div class="col-sm-7">
-						<input type="text" class="form-control" name="settings[fb-url]" id="settings-fb-url" value="<?php if(isset($data['fb-url']))  echo $data['fb-url'];?>" />
+						<input type="text" class="form-control" name="settings[fb-url]" id="settings-fb-url" placeholder="https://www.facebook.com/FacebookFrance/" value="<?php if(isset($data['fb-url']))  echo $data['fb-url'];?>" />
 					</div>
 				</div>
 				<div class="form-group">
