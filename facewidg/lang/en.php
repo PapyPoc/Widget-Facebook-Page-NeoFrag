@@ -23,16 +23,17 @@ Translated by NeoFrag community, contributors are:
 FoxLey, eResnova, creativewild and just translate this widget by zaekof
 **************************************************************************/
 
-$lang['titre']          = 'Widget Facebook';
-$lang['description']          = 'Your facebook page in widget !';
-$lang['link']          = 'Address of the page';
-$lang['t-header']          = 'Header size';
-$lang['v-articles']          = 'Article view ?';
-$lang['v-facepile']          = 'See the pictures';
-$lang['header-petit']          = 'Little';  
-$lang['header-grand']          = 'Big';
-$lang['oui']          = 'Yes';  
-$lang['non']          = 'No';
+$lang['titre']			= 'Widget Facebook';
+$lang['description']	= 'Your facebook page in widget !';
+$lang['link']			= 'Address of the page';
+$lang['t-header']		= 'Header size';
+$lang['v-articles']		= 'Article view ?';
+$lang['v-facepile']		= 'See the pictures';
+$lang['hauteur']		= 'Widget height';
+$lang['header-petit']	= 'Little';  
+$lang['header-grand']	= 'Big';
+$lang['oui']			= 'Show';  
+$lang['non']			= 'Hide';
 /*
 NeoFrag Alpha 0.1.6
 ./widgets/facewidg/lang/en.php

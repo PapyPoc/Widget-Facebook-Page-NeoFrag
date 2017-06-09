@@ -1,1 +1,23 @@
-<center><iframe frameborder="0" src="https://www.facebook.com/v2.4/plugins/page.php?adapt_container_width=true&href=<?php echo $data['fb-url'];?>/&locale=fr_FR&sdk=joey&show_facepile=<?php if($data['facepile'] == "1") { echo 'true'; } else {  echo 'false'; }?>&show_posts=<?php if($data['voir-posts'] == "1") { echo 'true'; } else {  echo 'false'; }?>&small_header=<?php if($data['header-taille'] == "0") { echo 'true'; } else {  echo 'false'; } ?>" style="<?php if($data['voir-posts'] == "1") { echo 'height: 500px'; } else {   if($data['header-taille'] == "0") { echo 'height: 75px'; } else {  echo 'height: 125px'; }   } ?>;width:100%"></iframe><center>
+<script>
+	(
+		function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.9&appId=191835177981895";
+			fjs.parentNode.insertBefore(js, fjs);
+		}
+		(document, 'script', 'facebook-jssdk')
+	);
+</script>
+<center>
+	<div id="fb-root"></div>
+	<div class="fb-page"
+		data-href="<?php echo $data['fb-url'];?>"
+		data-small-header="<?php if($data['header-taille'] == "0") { echo 'true'; } else {  echo 'false'; } ?>"
+		data-adapt-container-width="true"
+		data-show-posts="<?php if($data['voir-tous'] == "1") { echo 'true'; } else {  echo 'false'; }?>"
+		data-show-facepile="<?php if($data['voir-aime'] == "1") { echo 'true'; } else {  echo 'false'; }?>"
+		data-height="445"
+	></div>
+</center>

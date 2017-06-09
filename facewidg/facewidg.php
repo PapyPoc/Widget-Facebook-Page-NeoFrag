@@ -21,7 +21,7 @@ along with NeoFrag. If not, see <http://www.gnu.org/licenses/>.
 class w_facewidg extends Widget
 {
 	public $title       = '{lang titre}';
-	public $description = '{lang description}';
+	public $description = 'Widget de Page Facebook';
 	public $link        = '';
 	public $author      = 'MAJIID, Zaekof et Papy Poc';
 	public $licence     = 'http://www.neofrag.com/license.html LGPLv3';

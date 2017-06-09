@@ -1,4 +1,4 @@
-<?php if (!defined('NEOFRAG_CMS')) exit;
+﻿<?php if (!defined('NEOFRAG_CMS')) exit;
 /**************************************************************************
 Copyright © 2015 Michaël BILCOT & Jérémy VALENTIN
 
@@ -22,15 +22,15 @@ class w_facewidg_c_checker extends Controller_Widget
 {
 	public function index($settings = [])
 	{
-		return [
-			'fb-url'			=> $settings['fb-url'],
-			'header-taille'		=> in_array($settings['header-taille'], ['1', '0']) ? $settings['header-taille'] : '1',
-			'voir-posts'		=> in_array($settings['voir-post'], ['1', '0']) ? $settings['voir-post'] : '1',
-			'facepile'		=> in_array($settings['facepile'], ['1', '0']) ? $settings['facepile'] : '1'
+		return [				
+			'fb-url'		=>	$settings['fb-url'],
+			'header-taille'	=> 	in_array($settings['header-taille'], ['1', '0']) ? $settings['header-taille'] : '1',
+			'voir-tous'		=>	in_array($settings['voir-tous'], ['1', '0']) ? $settings['voir-tous'] : '1',
+			'voir-aime'		=>	in_array($settings['voir-aime'], ['1', '0']) ? $settings['voir-aime'] : '1',
+			'hauteur'		=>	$settings['hauteur']
 		];
 	}
 }
-
 /*
 NeoFrag Alpha 0.1.6
 ./widgets/facewidg/controllers/facewidg.php
