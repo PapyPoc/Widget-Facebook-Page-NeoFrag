@@ -25,7 +25,7 @@ class w_facewidg extends Widget
 	public $link        = '';
 	public $author      = 'MAJIID, Zaekof et Papy Poc';
 	public $licence     = 'http://www.neofrag.com/license.html LGPLv3';
-	public $version     = '1.0';
+	public $version     = '1.2';
 	public $nf_version  = 'Alpha 0.1.6';
 	public $path        = __FILE__;
 }
