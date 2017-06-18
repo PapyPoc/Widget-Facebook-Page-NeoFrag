@@ -1,7 +1,6 @@
 <div role="tabpanel">
 	<ul id="facebook-tabs" class="nav nav-tabs" role="tablist">
 		<li role="presentation" class="active"><a href="#facebook-options" aria-controls="facebook-options" role="tab" data-toggle="tab"><?php echo icon('fa-cogs'); ?> Options</a></li>
-		<li role="print_r"><a href="#print_r" aria-controls="print_r" role="tab" data-toggle="tab"><?php echo icon('fa-cogs'); ?> Echo</a></li>
 	</ul>
 	<div class="tab-content">
 		<div id="facebook-options" class="tab-pane active" role="tabpanel">
@@ -44,17 +43,10 @@
 				<div class="form-group">
 					<label for="settings-group" class="col-sm-4 control-label"><?php echo $this->lang('hauteur'); ?></label>
 					<div class="col-sm-5">
-						<input type="text" class="form-control" name="settings[hauteur]" id="hauteur" placeholder="maxi: 500" value="<?php if(isset($data['heuteur']))  echo $data['hauteur'];?>" />
+						<input type="text" class="form-control" name="settings[hauteur]" id="hauteur" placeholder="maxi: 500" value="<?php if(isset($data['hauteur']))  echo $data['hauteur'];?>" />
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="print_r" class="tab-pane active" role="tabpanel">
-			<div class="form-horizontal">
-				<div class="form-group">
-						<?php print_r($data['link']) ?>
-				</div>
-				</div>
 		</div>
 	</div>
 </div>

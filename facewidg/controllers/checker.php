@@ -27,7 +27,7 @@ class w_facewidg_c_checker extends Controller_Widget
 			'header-taille'	=> 	in_array($settings['header-taille'], ['1', '0']) ? $settings['header-taille'] : '1',
 			'voir-tous'		=>	in_array($settings['voir-tous'], ['1', '0']) ? $settings['voir-tous'] : '1',
 			'voir-aime'		=>	in_array($settings['voir-aime'], ['1', '0']) ? $settings['voir-aime'] : '1',
-			'hauteur'		=>	$settings['hauteur']
+			'hauteur'		=>	$settings['hauteur'],
 		];
 	}
 }
